@@ -18,7 +18,7 @@ body {
 .nav {
     height: 50px;
     width: 100vw;
-    position: absolute;
+    position: relative;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px)
     ;
@@ -72,13 +72,12 @@ ul li:hover {
 
 #login {
     border: 1px solid #498afb;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 #invite {
     border: 1px solid #ff3860;
     margin-right: 10px;
-    margin-bottom: 5px;
 }
 
 #login a {
@@ -144,6 +143,22 @@ ul li:hover {
     width: 100%;
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+}
+
+.main {
+    border-radius: 50px;
+    width: 70vw;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.3);
+    
+}
+
 @media only screen and (max-width: 600px) {
     header nav {
         display: none;
@@ -156,5 +171,18 @@ ul li:hover {
 
     #invite {
         margin-right: 0px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        width: 90vw
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .main {
+        width: 80vw;
     }
 }
