@@ -50,7 +50,7 @@ ul {
 }
 
 ul a {
-    color: white;
+    color: #303030;
 }
 
 ul li {
@@ -152,14 +152,96 @@ ul li:hover {
 }
 
 .main {
+    display: flex;
     border-radius: 50px;
     width: 70vw;
     height: 450px;
-    background-color: rgba(255, 255, 255, 0.3);
     
 }
 
+.intro {
+    text-align: center;
+    width: 30vw;
+    height: 450px;
+    border-radius: 50px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.intro  h1 {
+    padding-top: 20px;
+}
+
+.intro p {
+    padding: 100px 0;
+    font-size: xx-large;
+}
+
+.why-atnslash {
+    margin-left: 10vw;
+    text-align: center;
+    display: inline-block;
+    height: 450px;
+    width: 30vw;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.why-atnslash  h1 {
+    padding-top: 20px;
+}
+
+.why-atnslash p {
+    padding: 100px 0;
+    font-size: xx-large;
+}
+
+
+.linkpar > a:hover, .linkpar > a:visited {
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1450px) {
+    .main {
+        width: 80vw;
+    }
+    .why-atnslash {
+        width: 50vw;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .main {
+        width: 90vw
+    }
+    .intro {
+        width: 40vw;
+    } 
+    .why-atnslash {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .intro {
+        width: 45vw;
+    }
+    .why-atnslash {
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .intro {
+        width: 90vw;
+        border-radius: 50px;
+    }
+    .why-atnslash {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+
     header nav {
         display: none;
     }
@@ -175,14 +257,14 @@ ul li:hover {
     }
 }
 
-@media only screen and (max-width: 1200px) {
-    .main {
-        width: 90vw
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
-}
-
-@media only screen and (max-width: 1450px) {
-    .main {
-        width: 80vw;
-    }
-}
+  }
