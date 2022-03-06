@@ -198,9 +198,13 @@ ul li:hover {
 }
 
 
-.linkpar > a:hover, .linkpar > a:visited {
+.linkpar > a:hover{
     color: white;
     cursor: pointer;
+}
+
+a:visited {
+    color: white;
 }
 @media only screen and (max-width: 1450px) {
     .main {
