@@ -203,9 +203,11 @@ ul li:hover {
     cursor: pointer;
 }
 
-a:visited {
+a:visited, a:link {
     color: white;
 }
+
+
 @media only screen and (max-width: 1450px) {
     .main {
         width: 80vw;
