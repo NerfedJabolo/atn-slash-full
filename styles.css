@@ -53,6 +53,7 @@ a.active, a:hover {
 }
 
 nav #icon {
+    -webkit-tap-highlight-color:transparent;
     color: white;
     font-size: 30px;
     float: right;
