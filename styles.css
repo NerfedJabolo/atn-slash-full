@@ -19,25 +19,8 @@ nav {
 .hero {
     background-color: #4c4e50;
     color: white;
-    height: 400px;
+    height: 500px;
     width: 100vw;
-}
-
-.div1 {
-    /* text-align: center; */
-    width: 50vw;
-    height: 500px;
-    float: left;
-    /* background-color: orange; */
-    
-}
-.div2 {
-    /* text-align: center; */
-    width: 50vw;
-    height: 500px;
-    /* background-color: blue; */
-    overflow: hidden;
-    
 }
 
 label.logo {
@@ -85,6 +68,46 @@ nav #icon {
   display: none;
 }
 
+.div1 {
+    max-lines: 3;
+    margin-top: 35px;
+    margin-left: 25px;
+    /* text-align: center; */
+    width: 100vw;
+    height: 500px;
+    float: left;
+    /* background-color: orange; */
+    
+}
+
+.catchphrase {
+    font-size: 35px;
+    max-width: 40vw;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.perks {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.perk {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.perk::before {
+    content: "\2022";
+    color: green;
+    width: 1em;
+    font-weight: bolder;
+    margin-right: 0.5em;
+}
+
+
+
 @media (max-width: 1048px) {
   label.logo {
     padding-left: 60px;
@@ -97,6 +120,10 @@ nav #icon {
   nav a {
     font-size: 17px;
   }
+}
+
+.catchphrase {
+    max-width: 50vw;
 }
 
 @media (max-width: 909px) {
